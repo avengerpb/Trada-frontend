@@ -13,78 +13,25 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <!-- Custom CSS -->
+    <!-- <link href="css/modal.css" rel="stylesheet"> -->
     <link href="css/trada-homepage.css" rel="stylesheet">
-    <link href="css/modal.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- <link href="css/form.css" rel="stylesheet"> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-      .affix {
-          top:0;
-          width: 100%;
-          z-index: 9999 !important;
-      }
-      .navbar {
-          margin-bottom: 10px;
-      }
 
-      .affix ~ .container-fluid {
-         position: relative;
-         top: 50px;
-     }
-    </style>
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="200">
+<body >
 
     <!-- Navigation -->
-    <div class="container container-fluid">
-            <button onclick="document.getElementById('id01').style.display='block'" class="navbar-right" style="width:auto;">Login</button>
-        <ul class="nav navbar-nav navbar-right">
-            <!-- <li><a href="#">Login</a></li> -->
-
-            <li><a href="#">Signup</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Vietnamese</a></li>
-                <li><a href="#">English</a></li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-    <nav class="navbar navbar-default" role="navigation" data-spy="affix" data-offset-top="70">
-    <div id="id01" class="modal" >
-      
-      <form class="modal-content animate" >
-        
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        
-
-        <div class="modal-container" >
-          <label><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-
-          <label><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-            
-          <button type="submit">Login</button>
-          <input type="checkbox" checked="checked"> Remember me
-        </div>
-
-        <div class="modal-container">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
-    </div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
         <div class="container container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -102,13 +49,61 @@
                   <div class="input-group add-on" style="width:250%;">
                     <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
                     <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                      <button class="btn1 btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                     </div>
                   </div>
                 </form>
+
                 <div class="navbar-form navbar-right">
-                    <button class="btn btn-default" style="width:150%;">Start your market</button>
+                <div class="row">
+                    <div class="col-md-9">
+                    <button class="btn2 btn-default">Start your market</button>
+                    </div>
+                    <div class="col-md-3">
+                    <div class="dropdown">
+                  <button class="btn2 dropbtn">Login</button>
+                  <div class="dropdown-content" style="right:0;">
+                    <div class="row">
+                      <div class="col-md-12" style="margin-bottom: 20px;"">
+                        <p>Login via</p>
+                         <a class="btn btn-block btn-social btn-facebook">
+                             <span class="fa fa-facebook"></span> Login with Facebook
+                          </a>
+                          <br>
+                        <p>Or </p>
+                                      
+                         <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                            <div class="form-group">
+                               <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                               <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                            </div>
+                            <div class="form-group">
+                               <label class="sr-only" for="exampleInputPassword2">Password</label>
+                               <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                     <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                            </div>
+                            <div class="form-group">
+                               <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                            </div>
+                            <div class="checkbox">
+                               <label>
+                               <input type="checkbox"> keep me logged-in
+                               </label>
+                            </div>
+                         </form>
+                      </div>
+                      <div class="bottom text-center" style="margin-top: 20px;">
+                        New here ? <a href="#"><b>Join Us</b></a>
+                      </div>
+                   </div>
+                  </div>
+
+                  </div>
+
+                  </div>
                 </div>
+                </div>
+                
             </div>
             <!-- /.navbar-collapse -->
             <div class="container trending">
@@ -616,6 +611,13 @@
                     <p>Copyright &copy; Your Website 2014</p>
                 </div>
             </div>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Vietnamese</a></li>
+                <li><a href="#">English</a></li>
+              </ul> 
+            </li>
         </footer>
 
     </div>
@@ -636,6 +638,7 @@
     </script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
 
 </body>
 
