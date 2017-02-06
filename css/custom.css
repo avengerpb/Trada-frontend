@@ -1,0 +1,70 @@
+.product-col {
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.product-col .btn-cart:hover {
+    background: #292d30;
+}
+.product-col .cart-button .btn {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.cart-button .btn, .product-col .btn-cart {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.product-col .btn-cart {
+    font-size: 16px;
+    color: #fff;
+    background: #0a87cf;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  float: left;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+.rating > span {
+  font-size: 2em;
+  display: inline-block;
+  position: relative;
+  width: 0.7em;
+  height: 1.5em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating-number {
+  unicode-bidi: bidi-override;
+  /*direction: rtl;*/
+  float: left;
+  margin: auto;
+}
+.rating-number > span {
+  font-size: 1em;
+  display: inline-block;
+  position: relative;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating-row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
