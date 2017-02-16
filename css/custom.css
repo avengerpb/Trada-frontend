@@ -1,3 +1,8 @@
+input.new-item{
+	margin-bottom: 10px;
+	margin-top: -10px;
+}
+
 .product-col {
     padding: 15px 10px;
     margin-bottom: 20px;
