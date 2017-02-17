@@ -11,8 +11,11 @@ $(document).ready(function(){
             url: "http://localhost/trada-backend/index.php/user/login",
             data: dataString,
             success : function(result){
-                
-                alert(result);
+                var response = $.parseJSON(result);
+                /*alert (response.email);*/
+                if (response.is_logged_in == 1) {
+                    $('#login').replaceWith("<span> Welcome "+ response.user_name + " </span>");
+                }
             }
         });
     });
