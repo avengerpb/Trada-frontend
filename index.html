@@ -41,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Trada</a>
+                <a class="navbar-brand" href="index.html">Trada</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -55,57 +55,56 @@
                 </form>
 
                 <div class="navbar-form navbar-right">
-                <div class="row">
-                    <div class="col-md-9">
-                    <button class="btn2 btn-default">Start your market</button>
-                    </div>
-                    <div class="col-md-3">
-                    <div class="dropdown">
-                    
-                  <button class="btn2 dropbtn" id="login">Login</button>
-                  
-                  <div class="dropdown-content" style="right:0;">
                     <div class="row">
-                      <div class="col-md-12" style="margin-bottom: 20px;"">
-                        <p>Login via</p>
-                         <a class="btn btn-block btn-social btn-facebook">
-                             <span class="fa fa-facebook"></span> |  Facebook
-                          </a>
-                          <br>
-                        <p>Or </p>
-                                      
-                         
-                            <div class="form-group">
-                               <label class="sr-only" for="email">Email address</label>
-                               <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                        <div class="col-md-9 hidden start-market">
+                            <button class="btn2 btn-default">Start your market</button>
+                        </div>
+                        <div class="dropdown col-md-3 hidden login-new">
+                            <div class="btn dropdown-toggle user-name" data-toggle="dropdown"> <span class="caret"></div>
+                            <ul class="dropdown-menu">
+                              <li id="profile"><a href="#">Profile</a></li>
+                              <li id="logout"><a href="#">Logout</a></li>
+                            </ul>
+                          </div>
+                        <div class="col-md-3">
+                            <div class="dropdown" id="login">
+                                <button class="btn2 dropbtn">Login</button>
+                                <div class="dropdown-content" style="right:0;">
+                                    <div class="row">
+                                        <div class="col-md-12" style="margin-bottom: 20px;"">
+                                            <p>Login via</p>
+                                            <a class="btn btn-block btn-social btn-facebook">
+                                                <span class="fa fa-facebook"></span> |  Facebook
+                                            </a>
+                                            <br>
+                                            <p>Or </p>                                        
+                                            <div class="form-group">
+                                               <label class="sr-only" for="email">Email address</label>
+                                               <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                                            </div>
+                                            <div class="form-group">
+                                               <label class="sr-only" for="password">Password</label>
+                                               <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                                <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                               <button type="submit" class="btn btn-primary btn-block" id="logsubmit" >Log in</button>
+                                            </div>
+                                            <div class="checkbox">
+                                               <label>
+                                                    <input type="checkbox"> keep me logged-in
+                                               </label>
+                                            </div>                                                                           
+                                        </div>
+                                        <div class="bottom text-center" style="margin-top: 20px;">
+                                            New here ? <a id="sign-up" href="signup.html"><b>Join Us</b></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                               <label class="sr-only" for="password">Password</label>
-                               <input type="password" class="form-control" id="password" placeholder="Password" required>
-                                                     <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-                            </div>
-                            <div class="form-group">
-                               <button type="submit" class="btn btn-primary btn-block" id="logsubmit">Log in</button>
-                            </div>
-                            <div class="checkbox">
-                               <label>
-                               <input type="checkbox"> keep me logged-in
-                               </label>
-                            </div>
-                         
-                      </div>
-                      <div class="bottom text-center" style="margin-top: 20px;">
-                        New here ? <a href="#"><b>Join Us</b></a>
-                      </div>
-                   </div>
-                  </div>
-
-                  </div>
-
-                  </div>
-                </div>
-                </div>
-                
+                        </div>
+                    </div>
+                </div> 
             </div>
             <!-- /.navbar-collapse -->
             <div class="container trending">
@@ -118,9 +117,6 @@
                     <li><a class="week" href="#">PHONE </a></li>
                     <li><a class="week" href="#">TELEVISION </a></li>
                     <li><a class="week" href="#">SUBSCRIBE </a></li>
-                    <div id="testjs"><button> ABC </button></div>
-
-                    
                   </ul>
                 </div>
             <!-- end navbar-collapse -->
@@ -129,7 +125,7 @@
         <!-- /.container -->
     </nav>
     <!-- Page Content -->
-    <div class="container container-fluid" style="margin-top: 100px;">
+    <div class="container container-fluid" id="main-content" style="margin-top: 100px;">
 
         <div class="row">
 
@@ -175,9 +171,6 @@
 
             </div>
            
-            <div id="ditmemay">
-                
-            </div>
             <div class="row">
                 <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:20px; margin-top:20px;">
                     <h2>FOOD</h2>
@@ -632,8 +625,8 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/authentication.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/authentication.js"></script>
     <script>
     // Get the modal
     var modal = document.getElementById('id01');

@@ -400,3 +400,10 @@ a.btn-social{
     color: #fff;
     background-color: #496ebc;
 }
+
+.user-name{
+    font-size:200%;
+}
+.hidden {
+    display: none;
+}
