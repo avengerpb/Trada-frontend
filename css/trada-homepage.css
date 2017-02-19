@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
+
 body {
     /*padding-top: 70px;*/ /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
@@ -30,7 +32,7 @@ textarea.form-control {
 
 
 /* Set a style for all buttons */
-button {
+/*button {
     background-color: #4258b2;
     color: white;
     padding: 14px 20px;
@@ -39,7 +41,7 @@ button {
     cursor: pointer;
     width: 100%;
 }
-
+*/
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top: -300px; opacity: 0} 
@@ -85,6 +87,7 @@ button.btn1 {
     font-size: 16px;
     font-weight: 300;
     line-height: 50px;
+    width: 100%;
     color: #fff;
     -moz-border-radius: 0px 4px 4px 0px; -webkit-border-radius: 0px 4px 4px 0px; border-radius: 0px 4px 4px 0px;
     text-shadow: none;

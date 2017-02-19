@@ -14,8 +14,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <!-- <link href="css/modal.css" rel="stylesheet"> -->
     <link href="css/trada-homepage.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.css">
     <!-- <link href="css/form.css" rel="stylesheet"> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -78,9 +78,9 @@
                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
                             </div>
                             <div class="form-group">
-                               <label class="sr-only" for="exampleInputPassword2">Password</label>
-                               <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                                     <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                              <label class="sr-only" for="exampleInputPassword2">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                              <div class="help-block text-right"><a href="">Forget the password ?</a></div>
                             </div>
                             <div class="form-group">
                                <button type="submit" class="btn btn-primary btn-block">Log in</button>
@@ -127,18 +127,6 @@
     <div class="container container-fluid" style="margin-top: 100px;">
 
         <div class="row">
-
-            <!-- <div class="col-md-3">
-                <p class="lead">Shop Name</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
-                </div>
-            </div> -->
-
-            <!-- <div class="col-md-9"> -->
-
             <div class="row carousel-holder">
 
                 <div class="col-md-12">
@@ -171,426 +159,359 @@
             </div>
 
             <div class="row">
-                <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:20px; margin-top:20px;">
-                    <h2>FOOD</h2>
+                <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:0px; padding-top:7%; padding-left: 2.2%;">
+                    <h2>PHONES</h2>
+                </div> 
+                <div class="see-more col-sm-8 col-lg-8 col-md-8" style="text-align:right; padding-top:10%; padding-right: 2.2%;">
+                      <button class="btn btn-default">See More >>></button>
                 </div>
+                
                 <div class="clearfix"></div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$24.99</h4>
-                            <h4><a href="#">First Product</a>
-                            </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">15 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$64.99</h4>
-                            <h4><a href="#">Second Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">12 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <ul class="product-list-basic">
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$74.99</h4>
-                            <h4><a href="#">Third Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">31 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <li style="margin:2%;">
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$84.99</h4>
-                            <h4><a href="#">Fourth Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">6 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <a href="#" class="product-photo">
+                        <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
+                    </a>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$94.99</h4>
-                            <h4><a href="#">Fifth Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">18 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <h2><a href="#">Galaxy S7</a></h2>
+                    <a href="#" class="product-compare">compare</a>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$100.99</h4>
-                            <h4><a href="#">Sixth Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" style="width: 60px" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
                         </div>
-                        <div class="ratings">
-                            <p class="pull-right">18 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
+
+                        <span><a href="#">82 reviews</a></span>
                     </div>
-                </div>
-                <div class="see-more" style="float:right">
-                    <button class="btn btn-default">See More >>></button>
-                </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button class="product">Buy Now!</button>
+                    <p class="product-price">$599.00</p>
+
+                </li>
+
+                <li style="margin:2%;">
+
+                    <a href="#" class="product-photo">
+                        <img src="http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one/hero/color-picker/black.png" height="130" alt="Galaxy Alpha" />
+                    </a>
+
+                    <h2><a href="#">HTC One</a></h2>
+                    <a href="#" class="product-compare">compare</a>
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">90 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button>Buy Now!</button>
+                    <p class="product-price">$599.00</p>
+
+                </li>
+
+                <li style="margin:2%;">
+
+                    <a href="#" class="product-photo">
+                        <img src="https://staticshop.o2.co.uk/product/images/iphone-7-plus-matt-black_sku-header.png?cb=2e5bd1802aec5fc0dcc12fa2a249e0b4" height="130" alt="Nokia Lumia" />
+                    </a>
+
+                    <h2><a href="#">Iphone 7</a></h2>
+                    <a href="#" class="product-compare">compare</a>
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" style="width: 60px" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">123 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <span class="product-out-of-stock">Out of stock</span>
+                    <p class="product-price">$299.00</p>
+
+                </li>
+
+            </ul>
             </div>
 
             <div class="row">
-                <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:20px; margin-top:20px;">
+                <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:px; padding-top:7%; padding-left: 2.2%;">
                     <h2>CLOTHES</h2>
+                </div> 
+                <div class="see-more col-sm-8 col-lg-8 col-md-8" style="text-align:right; padding-top:10%; padding-right: 2.2%;">
+                      <button class="btn btn-default">See More >>></button>
                 </div>
+                
                 <div class="clearfix"></div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$24.99</h4>
-                            <h4><a href="#">First Product</a>
-                            </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">15 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$64.99</h4>
-                            <h4><a href="#">Second Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">12 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <ul class="product-list-basic">
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$74.99</h4>
-                            <h4><a href="#">Third Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">31 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <li style="margin:2%;">
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$84.99</h4>
-                            <h4><a href="#">Fourth Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">6 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <a href="#" class="product-photo">
+                        <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
+                    </a>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$94.99</h4>
-                            <h4><a href="#">Fifth Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">18 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <h2><a href="#">Galaxy S7</a></h2>
+                    <a href="#" class="product-compare">compare</a>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$100.99</h4>
-                            <h4><a href="#">Sixth Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" style="width: 60px" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
                         </div>
-                        <div class="ratings">
-                            <p class="pull-right">18 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
+
+                        <span><a href="#">82 reviews</a></span>
                     </div>
-                </div>
-                <div class="see-more" style="float:right">
-                    <button class="btn btn-default">See More >>></button>
-                </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button class="product">Buy Now!</button>
+                    <p class="product-price">$599.00</p>
+
+                </li>
+
+                <li style="margin:2%;">
+
+                    <a href="#" class="product-photo">
+                        <img src="http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one/hero/color-picker/black.png" height="130" alt="Galaxy Alpha" />
+                    </a>
+
+                    <h2><a href="#">HTC One</a></h2>
+                    <a href="#" class="product-compare">compare</a>
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">90 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button>Buy Now!</button>
+                    <p class="product-price">$599.00</p>
+
+                </li>
+
+                <li style="margin:2%;">
+
+                    <a href="#" class="product-photo">
+                        <img src="https://staticshop.o2.co.uk/product/images/iphone-7-plus-matt-black_sku-header.png?cb=2e5bd1802aec5fc0dcc12fa2a249e0b4" height="130" alt="Nokia Lumia" />
+                    </a>
+
+                    <h2><a href="#">Iphone 7</a></h2>
+                    <a href="#" class="product-compare">compare</a>
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" style="width: 60px" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">123 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <span class="product-out-of-stock">Out of stock</span>
+                    <p class="product-price">$299.00</p>
+
+                </li>
+
+            </ul>
             </div>
 
             <div class="row">
-                <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:20px; margin-top:20px;">
-                    <h2>PHONE</h2>
+                <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:px; padding-top:7%; padding-left: 2.2%;">
+                    <h2>CLOTHES</h2>
+                </div> 
+                <div class="see-more col-sm-8 col-lg-8 col-md-8" style="text-align:right; padding-top:10%; padding-right: 2.2%;">
+                      <button class="btn btn-default">See More >>></button>
                 </div>
+                
                 <div class="clearfix"></div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$24.99</h4>
-                            <h4><a href="#">First Product</a>
-                            </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">15 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$64.99</h4>
-                            <h4><a href="#">Second Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">12 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <ul class="product-list-basic">
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$74.99</h4>
-                            <h4><a href="#">Third Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">31 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <li style="margin:2%;">
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$84.99</h4>
-                            <h4><a href="#">Fourth Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">6 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <a href="#" class="product-photo">
+                        <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
+                    </a>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$94.99</h4>
-                            <h4><a href="#">Fifth Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="ratings">
-                            <p class="pull-right">18 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <h2><a href="#">Galaxy S7</a></h2>
+                    <a href="#" class="product-compare">compare</a>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$100.99</h4>
-                            <h4><a href="#">Sixth Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" style="width: 60px" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
                         </div>
-                        <div class="ratings">
-                            <p class="pull-right">18 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
+
+                        <span><a href="#">82 reviews</a></span>
                     </div>
-                </div>
-                <div class="see-more" style="float:right">
-                    <button class="btn btn-default">See More >>></button>
-                </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button class="product">Buy Now!</button>
+                    <p class="product-price">$599.00</p>
+
+                </li>
+
+                <li style="margin:2%;">
+
+                    <a href="#" class="product-photo">
+                        <img src="http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one/hero/color-picker/black.png" height="130" alt="Galaxy Alpha" />
+                    </a>
+
+                    <h2><a href="#">HTC One</a></h2>
+                    <a href="#" class="product-compare">compare</a>
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">90 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button>Buy Now!</button>
+                    <p class="product-price">$599.00</p>
+
+                </li>
+
+                <li style="margin:2%;">
+
+                    <a href="#" class="product-photo">
+                        <img src="https://staticshop.o2.co.uk/product/images/iphone-7-plus-matt-black_sku-header.png?cb=2e5bd1802aec5fc0dcc12fa2a249e0b4" height="130" alt="Nokia Lumia" />
+                    </a>
+
+                    <h2><a href="#">Iphone 7</a></h2>
+                    <a href="#" class="product-compare">compare</a>
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" style="width: 60px" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">123 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <span class="product-out-of-stock">Out of stock</span>
+                    <p class="product-price">$299.00</p>
+
+                </li>
+                <li style="margin:2%;">
+
+                    <a href="#" class="product-photo">
+                        <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
+                    </a>
+
+                    <h2><a href="#">Galaxy S7</a></h2>
+                    <a href="#" class="product-compare">compare</a>
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" style="width: 60px" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">82 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button class="product">Buy Now!</button>
+                    <p class="product-price">$599.00</p>
+
+                </li>
+
+                <li style="margin:2%;">
+
+                    <a href="#" class="product-photo">
+                        <img src="http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one/hero/color-picker/black.png" height="130" alt="Galaxy Alpha" />
+                    </a>
+
+                    <h2><a href="#">HTC One</a></h2>
+                    <a href="#" class="product-compare">compare</a>
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">90 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button>Buy Now!</button>
+                    <p class="product-price">$599.00</p>
+
+                </li>
+
+                <li style="margin:2%;">
+
+                    <a href="#" class="product-photo">
+                        <img src="https://staticshop.o2.co.uk/product/images/iphone-7-plus-matt-black_sku-header.png?cb=2e5bd1802aec5fc0dcc12fa2a249e0b4" height="130" alt="Nokia Lumia" />
+                    </a>
+
+                    <h2><a href="#">Iphone 7</a></h2>
+                    <a href="#" class="product-compare">compare</a>
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" style="width: 60px" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">123 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <span class="product-out-of-stock">Out of stock</span>
+                    <p class="product-price">$299.00</p>
+
+                </li>
+
+            </ul>
             </div>
 
             <!-- </div> -->
