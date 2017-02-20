@@ -51,17 +51,17 @@ $(document).ready(function(){
             }
         });
     });
-});
 
-$(document).ready(function(){
     $('#sign-up').click(function(event){
         $('#main-content').load('signup.html');
         event.preventDefault();
+    });
+    $.ajax({
+        type: "POST",
+        url: "http://localhost/trada-backend/index.php/Facebook_login/fb_login",
+        success: function(url_response){
+            var url = JSON.parse(url_response);
+            $('a.btn-facebook').attr('href', url.login_url);
+        }
     })
-})
-
-$(document).ready(function(){
-    $('#log-out').click(function(){
-
-    })
-})
+});
