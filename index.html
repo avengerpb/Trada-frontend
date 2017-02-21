@@ -24,12 +24,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/authentication.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
 </head>
-
 <body style="padding-top:70px;">
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
         <div class="container container-fluid">
@@ -60,7 +61,8 @@
                             <button class="btn2 btn-default">Start your market</button>
                         </div>
                         <div class="dropdown col-md-3 hidden login-new">
-                            <div class="btn dropdown-toggle user-name" data-toggle="dropdown"> <span class="caret"></div>
+                            <!-- <div class="btn dropdown-toggle user-name hidden" data-toggle="dropdown" > <span class="caret"></div> -->
+                            <div class="btn dropdown-toggle user-img" data-toggle="dropdown"><img src=""></div>
                             <ul class="dropdown-menu">
                               <li id="profile"><a href="#">Profile</a></li>
                               <li id="logout"><a href="#">Logout</a></li>
@@ -73,7 +75,7 @@
                                     <div class="row">
                                         <div class="col-md-12" style="margin-bottom: 20px;"">
                                             <p>Login via</p>
-                                            <a class="btn btn-block btn-social btn-facebook">
+                                            <a class="btn btn-block btn-social btn-facebook" id="fb-login" href="">
                                                 <span class="fa fa-facebook"></span> |  Facebook
                                             </a>
                                             <br>
@@ -128,18 +130,6 @@
     <div class="container container-fluid" id="main-content" style="margin-top: 100px;">
 
         <div class="row">
-
-            <!-- <div class="col-md-3">
-                <p class="lead">Shop Name</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
-                </div>
-            </div> -->
-
-            <!-- <div class="col-md-9"> -->
-
             <div class="row carousel-holder">
 
                 <div class="col-md-12">
@@ -625,8 +615,7 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/authentication.js"></script>
+    
     <script>
     // Get the modal
     var modal = document.getElementById('id01');
@@ -639,7 +628,7 @@
     }
     </script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    
     
 
 </body>

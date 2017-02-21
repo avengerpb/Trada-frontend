@@ -407,3 +407,7 @@ a.btn-social{
 .hidden {
     display: none;
 }
+.user-img img{
+    height: 50px;
+    width: 50px;
+}
