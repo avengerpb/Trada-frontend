@@ -282,7 +282,7 @@ button.btn2 {
     position: relative;
     height: 50px;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 20px 0 20px;
     vertical-align: middle;
     background: #4267b2;
     border: 0;
