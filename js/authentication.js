@@ -65,7 +65,6 @@ $(document).ready(function(){
         $('#main-content').load('signup.html');
         event.preventDefault();
     });
-<<<<<<< HEAD
 
     $.ajax({
         type: "POST",
@@ -89,4 +88,4 @@ $(document).ready(function(){
         localStorage.setItem('result', JSON.stringify(fb));
         window.location.reload();
     }
-
+});
