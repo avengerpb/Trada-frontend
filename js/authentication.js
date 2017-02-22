@@ -36,7 +36,20 @@ $(document).ready(function(){
             
         }
         else if (this.id == 'profile') {
-            alert('MADAFAKA');
+            // var user_name = response.user_name;
+            // $.ajax({
+            //     type: "POST",
+            //     url: "http://localhost/trada-backend/index.php/user/profile/"+user_name,
+            //     success : function(response){
+            //         var response = JSON.parse(response);
+            //         $('#profile-title').prepend(response.full_name);
+            //         $('#fb-full-name').prepend(response.full_name);
+            //         $('#fb-email').prepend(response.email);
+            //         $('#fb-link > a').attr('href', response.fb_link);
+            //         $('#fb-link > a').append(response.fb_link);
+            //         $('.fb-pic > img').attr('src', response.user_image_url);
+            //     }
+            // });
         }
     });
 
@@ -89,3 +102,4 @@ $(document).ready(function(){
         window.location.reload();
     }
 });
+
