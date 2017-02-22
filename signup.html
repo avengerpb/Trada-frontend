@@ -17,7 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="css/trada-homepage.css" rel="stylesheet">
-    <!-- <link href="css/authen.css" rel="stylesheet"> -->
+    <link href="css/authen.css" rel="stylesheet">
     <link href="css/typicons.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,7 +30,7 @@
 
 <body >
 
-  <!-- <div class="inner-bg"> -->
+  <div class="inner-bg">
     <div class="container">
       <div class="row">
         <div class="col-sm-5 form-box" style="visibility: visible;">
@@ -45,34 +45,30 @@
           </div>
 
           <div class="form-bottom">
-            <form action="#" method="post">
+            <!-- <form action="#" method="post"> -->
               <div class="form-group">
-                <label class="sr-only" for="form-first-name">First name</label>
-                <input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+                <label class="sr-only" for="form-first-name">Username</label>
+                <input type="text" name="form-first-name" placeholder="Username" class="form-first-name form-control" id="new-username">
               </div>
               <div class="form-group">
-                <label class="sr-only" for="form-last-name">Last name</label>
-                <input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+                <label class="sr-only" for="form-last-name">Full Name</label>
+                <input type="text" name="form-last-name" placeholder="Full Name" class="form-last-name form-control" id="new-fullname">
               </div>
               <div class="form-group">
                 <label class="sr-only" for="form-email">Email</label>
-                <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+                <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="new-email">
               </div>
         
               <div class="form-group">
                 <label class="sr-only" for="form-password">Password</label>
-                <input type="password" name="form-password" placeholder="Password" class="form-password " id="form-password" >
+                <input type="password" name="form-password" placeholder="Password" class="form-password " id="new-password" >
               </div>
               <div class="form-group">
                 <label class="sr-only" for="form-cpassword">Confirm Password</label>
-                <input type="password" name="form-cpassword" placeholder="Confirm Password" class="form-password" id="form-cpassword">
+                <input type="password" name="form-cpassword" placeholder="Confirm Password" class="form-password" id="new-cpassword">
               </div>
-              <button type="submit" class="btn">Sign me up!</button>
-              <div class="form-links">
-                <a href="#" class="launch-modal" data-modal-id="modal-privacy">Privacy Policy</a> - 
-                <a href="#" class="launch-modal" data-modal-id="modal-faq">FAQ</a>
-              </div>
-            </form>
+              <button class="btn" id="signup">Sign me up!</button>
+            <!-- </form> -->
           </div>
         </div>
         <div class="col-sm-7 text">
@@ -89,7 +85,7 @@
         </div>
       </div>
     </div>
-  <!-- </div> -->
+  </div>
   <!-- /.container -->
   <!-- test -->
   
@@ -100,6 +96,7 @@
 
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/signup.js"></script>
     
 
 </body>
