@@ -3,6 +3,7 @@ $(document).ready(function(){
     /*localStorage.clear();*/
     /*alert("aaaaa");*/
     var response = JSON.parse(localStorage.getItem('result'));
+    /*alert(response.user[0].user_id);*/
     if (response != null) {
         /*$('div#login').attr('id','login-new');
         $('#login-new').html("<div> "+ localStorage.user_name + " </div>");*/
@@ -15,12 +16,12 @@ $(document).ready(function(){
             $('div.user-img > img').attr('src', response.profile_pic_link);
         }
         else {
-            $('div.user-img > img').attr('src', response.user_image_url)
+            $('div.user-img > img').attr('src', response.user_image_url);
         }
     }
     
 
-    $('#logout, #profile').click(function () {
+    $('#logout').click(function () {
         if (this.id == 'logout') {
             $.ajax({
                 type: "POST",
@@ -35,21 +36,14 @@ $(document).ready(function(){
             });
             
         }
-        else if (this.id == 'profile') {
-            // var user_name = response.user_name;
-            // $.ajax({
-            //     type: "POST",
-            //     url: "http://localhost/trada-backend/index.php/user/profile/"+user_name,
-            //     success : function(response){
-            //         var response = JSON.parse(response);
-            //         $('#profile-title').prepend(response.full_name);
-            //         $('#fb-full-name').prepend(response.full_name);
-            //         $('#fb-email').prepend(response.email);
-            //         $('#fb-link > a').attr('href', response.fb_link);
-            //         $('#fb-link > a').append(response.fb_link);
-            //         $('.fb-pic > img').attr('src', response.user_image_url);
-            //     }
-            // });
+    });
+
+    $('input#password, input#email').keypress(function(e) {
+        if (e.which == '13') {
+        /*var input = $('#srch-term').val();*/
+            e.preventDefault();
+             /*alert(input);*/
+            $('#logsubmit').trigger('click');
         }
     });
 
@@ -74,11 +68,6 @@ $(document).ready(function(){
         });
     });
 
-    $('#sign-up').click(function(event){
-        $('#main-content').load('signup.html');
-        event.preventDefault();
-    });
-
     $.ajax({
         type: "POST",
         url: "http://localhost/trada-backend/index.php/Facebook_login/fb_login",
@@ -101,5 +90,10 @@ $(document).ready(function(){
         localStorage.setItem('result', JSON.stringify(fb));
         window.location.reload();
     }
+
 });
+
+
+
+
 

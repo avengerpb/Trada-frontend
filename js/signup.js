@@ -16,7 +16,7 @@ $(document).ready(function(){
                 data: dataString,
                 success : function(result){
                 // alert("dataString");
-                    window.location.replace("http://localhost/trada/");
+                    window.location.replace("http://localhost/trada-frontend/index.html");
                     var result = JSON.parse(result);
                     if(result != null){
                     }
@@ -27,6 +27,6 @@ $(document).ready(function(){
         });
     }
     else {
-        window.location.replace("http://localhost/trada/");
+        window.location.replace("http://localhost/trada-frontend/index.html");
     }
 });

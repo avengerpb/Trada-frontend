@@ -26,8 +26,8 @@
     <![endif]-->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
     <script type="text/javascript" src="js/authentication.js"></script>
-
 
 </head>
 <body style="padding-top:70px;">
@@ -35,7 +35,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
         <div class="container container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header" style="margin-top:2%">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -46,23 +46,23 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form class="navbar-form navbar-left" role="search" style="margin-left:20px;" id="srch" method="post" action="http://localhost/trada-backend/index.php/search/search_result">
-                  <div class="input-group add-on" style="width:250%;">
+                <!-- <form name="myform" class="navbar-form navbar-left" role="search" style="margin-left:20px; " id="srch"> -->
+                <div class="input-group add-on navbar-left" style="width:55%; margin-top:2%; margin-left:5%;">
                     <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text" required="">
-                    <div class="input-group-btn">
-                      <button class="btn1 btn-default" type="submit" id="srch-btn"><i class="glyphicon glyphicon-search"></i></button>
+                    <div class="input-group-btn" style="width:10%;">
+                      <button class="btn1 btn-default" id="srch-btn"><i class="glyphicon glyphicon-search"></i></button>
                     </div>
-                  </div>
-                </form>
+                </div>
+                <!-- </form> -->
 
                 <div class="navbar-form navbar-right">
 
 
                     <div class="row">
-                        <div class="col-md-9 hidden start-market">
+                        <div class="col-md-9 hidden start-market" style="margin-top:5%">
                             <button class="btn2 btn-default">Start your market</button>
                         </div>
-                        <div class="dropdown col-md-3 hidden login-new">
+                        <div class="dropdown col-md-3 hidden login-new" style="margin-top:3%">
                             <!-- <div class="btn dropdown-toggle user-name hidden" data-toggle="dropdown" > <span class="caret"></div> -->
                             <div class="btn dropdown-toggle user-img " data-toggle="dropdown"><img src=""></div>
                             <ul class="dropdown-menu">
@@ -72,7 +72,7 @@
                           </div>
                         <div class="col-md-3">
                             <div class="dropdown" id="login">
-                                <button class="btn2 dropbtn">Login</button>
+                                <button class="btn2 dropbtn" style="margin-top:20%">Login</button>
                                 <div class="dropdown-content" style="right:0;">
                                     <div class="row">
                                         <div class="col-md-12" style="margin-bottom: 20px;"">
@@ -259,272 +259,7 @@
             </ul>
             </div>
 
-            <div class="row">
-                <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:px; padding-top:7%; padding-left: 2.2%;">
-                    <h2>CLOTHES</h2>
-                </div> 
-                <div class="see-more col-sm-8 col-lg-8 col-md-8" style="text-align:right; padding-top:10%; padding-right: 2.2%;">
-                      <button class="btn btn-default">See More >></button>
-                </div>
-                
-                <div class="clearfix"></div>
-
-                <ul class="product-list-basic">
-
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
-                    </a>
-
-                    <h2><a href="#">Galaxy S7</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" style="width: 60px" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">82 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <button class="product">Buy Now!</button>
-                    <p class="product-price">$599.00</p>
-
-                </li>
-
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one/hero/color-picker/black.png" height="130" alt="Galaxy Alpha" />
-                    </a>
-
-                    <h2><a href="#">HTC One</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">90 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <button>Buy Now!</button>
-                    <p class="product-price">$599.00</p>
-
-                </li>
-
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="https://staticshop.o2.co.uk/product/images/iphone-7-plus-matt-black_sku-header.png?cb=2e5bd1802aec5fc0dcc12fa2a249e0b4" height="130" alt="Nokia Lumia" />
-                    </a>
-
-                    <h2><a href="#">Iphone 7</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" style="width: 60px" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">123 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <span class="product-out-of-stock">Out of stock</span>
-                    <p class="product-price">$299.00</p>
-
-                </li>
-
-            </ul>
-            </div>
-
-            <div class="row">
-                <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:px; padding-top:7%; padding-left: 2.2%;">
-                    <h2>CLOTHES</h2>
-                </div> 
-                <div class="see-more col-sm-8 col-lg-8 col-md-8" style="text-align:right; padding-top:10%; padding-right: 2.2%;">
-                      <button class="btn btn-default">See More >></button>
-                </div>
-                
-                <div class="clearfix"></div>
-
-                <ul class="product-list-basic">
-
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
-                    </a>
-
-                    <h2><a href="#">Galaxy S7</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" style="width: 60px" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">82 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <button class="product">Buy Now!</button>
-                    <p class="product-price">$599.00</p>
-
-                </li>
-
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one/hero/color-picker/black.png" height="130" alt="Galaxy Alpha" />
-                    </a>
-
-                    <h2><a href="#">HTC One</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">90 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <button>Buy Now!</button>
-                    <p class="product-price">$599.00</p>
-
-                </li>
-
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="https://staticshop.o2.co.uk/product/images/iphone-7-plus-matt-black_sku-header.png?cb=2e5bd1802aec5fc0dcc12fa2a249e0b4" height="130" alt="Nokia Lumia" />
-                    </a>
-
-                    <h2><a href="#">Iphone 7</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" style="width: 60px" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">123 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <span class="product-out-of-stock">Out of stock</span>
-                    <p class="product-price">$299.00</p>
-
-                </li>
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
-                    </a>
-
-                    <h2><a href="#">Galaxy S7</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" style="width: 60px" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">82 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <button class="product">Buy Now!</button>
-                    <p class="product-price">$599.00</p>
-
-                </li>
-
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one/hero/color-picker/black.png" height="130" alt="Galaxy Alpha" />
-                    </a>
-
-                    <h2><a href="#">HTC One</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">90 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <button>Buy Now!</button>
-                    <p class="product-price">$599.00</p>
-
-                </li>
-
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="https://staticshop.o2.co.uk/product/images/iphone-7-plus-matt-black_sku-header.png?cb=2e5bd1802aec5fc0dcc12fa2a249e0b4" height="130" alt="Nokia Lumia" />
-                    </a>
-
-                    <h2><a href="#">Iphone 7</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" style="width: 60px" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">123 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <span class="product-out-of-stock">Out of stock</span>
-                    <p class="product-price">$299.00</p>
-
-                </li>
-
-            </ul>
-            </div>
-
-            <!-- </div> -->
-
-        </div>
+          </div>  
 
     </div>
     <!-- /.container -->
@@ -548,26 +283,7 @@
               </ul> 
             </li>
         </footer>
-
     </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    
-    <script>
-    // Get the modal
-    var modal = document.getElementById('id01');
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    </script>
-    <!-- Bootstrap Core JavaScript -->
-    
-    
 
 </body>
 

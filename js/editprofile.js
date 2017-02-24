@@ -66,7 +66,5 @@ $(document).ready(function(){
     }
     // else {
     //     window.location.replace("http://localhost/trada-frontend/index.html");
-    // }
-
-    
+    // } 
 });
