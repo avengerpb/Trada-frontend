@@ -27,6 +27,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
     <script type="text/javascript" src="js/authentication.js"></script>
 
 </head>
@@ -54,10 +55,7 @@
                     </div>
                 </div>
                 <!-- </form> -->
-
                 <div class="navbar-form navbar-right">
-
-
                     <div class="row">
                         <div class="col-md-9 hidden start-market" style="margin-top:5%">
                             <button class="btn2 btn-default">Start your market</button>
@@ -75,36 +73,56 @@
                                 <button class="btn2 dropbtn" style="margin-top:20%">Login</button>
                                 <div class="dropdown-content" style="right:0;">
                                     <div class="row">
-                                        <div class="col-md-12" style="margin-bottom: 20px;"">
-                                            <p>Login via</p>
+                                        <div class="col-md-12 modal-body well" style="margin-bottom: 20px;"">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#tab-login" data-toggle="tab">Login</a></li>
+                                                <li><a href="#create" data-toggle="tab">Create Account</a></li>
+                                            </ul>
+                                            <div id="myTabContent" class="tab-content">
+                                                <div class="tab-pane active in" id="tab-login">
+                                                    <p style="margin-top:10%">Login via</p>
 
-                                            <a class="btn btn-block btn-social btn-facebook" id="fb-login" href="">
+                                                    <a class="btn btn-block btn-social btn-facebook" id="fb-login" href="">
 
-                                                <span class="fa fa-facebook"></span> |  Facebook
-                                            </a>
-                                            <br>
-                                            <p>Or </p>                                        
-                                            <div class="form-group">
-                                               <label class="sr-only" for="email">Email address</label>
-                                               <input type="email" class="form-control" id="email" placeholder="Email address" required>
-                                            </div>
-                                            <div class="form-group">
-                                               <label class="sr-only" for="password">Password</label>
-                                               <input type="password" class="form-control" id="password" placeholder="Password" required>
-                                                <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-                                            </div>
-                                            <div class="form-group">
-                                               <button type="submit" class="btn btn-primary btn-block" id="logsubmit" >Log in</button>
-                                            </div>
-                                            <div class="checkbox">
-                                               <label>
-                                                    <input type="checkbox"> keep me logged-in
-                                               </label>
+                                                        <span class="fa fa-facebook"></span> |  Facebook
+                                                    </a>
+                                                    <br>
+                                                    <p>Or </p>                                        
+                                                    <div class="form-group">
+                                                       <label class="sr-only" for="email">Email address</label>
+                                                       <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                       <label class="sr-only" for="password">Password</label>
+                                                       <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                                        <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                       <button type="submit" class="btn btn-primary btn-block" id="logsubmit" >Log in</button>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                       <label>
+                                                            <input type="checkbox"> keep me logged-in
+                                                       </label>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="create">
+                                                    <div class="input-signup" style="margin-top:10%; margin-bottom:10%;">
+                                                        <input type="email" class="form-control" id="new-username" placeholder="User name" required>
+                                                        <input type="email" class="form-control" id="new-fullname" placeholder="Full name" required>
+                                                        <input type="email" class="form-control" id="new-email" placeholder="Email" required>
+                                                        <input type="password" class="form-control" id="new-password" placeholder="Password" required>
+                                                        <input type="password" class="form-control" id="new-cpassword" placeholder="Confirm password" required>
+                                                    </div>
+                                                    <div>
+                                                      <button type="submit" class="btn btn-primary" id="signup">Create Account</button>
+                                                    </div>
+                                                </div>
                                             </div>                                                                           
-                                        </div>
+                                        <!-- </div>
                                         <div class="bottom text-center" style="margin-top: 20px;">
                                             New here ? <a id="sign-up" href="signup.html"><b>Join Us</b></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
 
@@ -115,7 +133,6 @@
             </div>
             <!-- /.navbar-collapse -->
             <div class="container trending">
-            <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                   <ul class="nav navbar-nav trending-menu">
                     <li><a class="week" href="#">FOOD </a></li>
@@ -126,7 +143,6 @@
                     <li><a class="week" href="#">SUBSCRIBE </a></li>
                   </ul>
                 </div>
-            <!-- end navbar-collapse -->
             </div>
         </div>
         <!-- /.container -->

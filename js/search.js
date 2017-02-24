@@ -17,7 +17,12 @@ $(document).ready(function(){
 	        data: searchString,
 	        success : function(result){
 	            var result = JSON.parse(result);
-	            alert(result.user[0].user_name);  
+	            if(result.length == 0){
+	            	alert('please input something');
+	            }
+	            else{
+	            	alert(result.user[0].user_name); 
+	           	} 
 	        }
 	    });
 	});
