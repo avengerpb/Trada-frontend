@@ -3,14 +3,7 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-
-
-
-body {
-    /*padding-top: 70px;*/ /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-
-input[type="text"], 
+input[type="text"],
 textarea, 
 textarea.form-control {
     height: 50px;
@@ -159,7 +152,9 @@ footer {
     margin: 50px 0;
 }
 
-input[type="text"], 
+input[type="text"],
+input[type="email"],
+input[type="password"], 
 textarea, 
 textarea.form-control {
     height: 50px;
@@ -415,3 +410,17 @@ a.btn-social{
     width: 50px;
     border-radius: 50%;
 }
+
+#empty,
+#password_error,
+#username_error,
+#email_error {
+    color:red;
+}
+
+.input-signup{
+    margin-top:10%; 
+    margin-bottom:10%;
+}
+
+

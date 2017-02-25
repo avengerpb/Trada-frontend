@@ -5,14 +5,12 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Trada | Homepage</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/trada-homepage.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -89,8 +87,8 @@
                                                     <br>
                                                     <p>Or </p>                                        
                                                     <div class="form-group">
-                                                       <label class="sr-only" for="email">Email address</label>
-                                                       <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                                                       <label class="sr-only" for="email">Email or Username</label>
+                                                       <input type="email" class="form-control" id="email" placeholder="Email or Username" required>
                                                     </div>
                                                     <div class="form-group">
                                                        <label class="sr-only" for="password">Password</label>
@@ -107,16 +105,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane fade" id="create">
-                                                    <div class="input-signup" style="margin-top:10%; margin-bottom:10%;">
-                                                        <input type="email" class="form-control" id="new-username" placeholder="User name" required>
-                                                        <input type="email" class="form-control" id="new-fullname" placeholder="Full name" required>
-                                                        <input type="email" class="form-control" id="new-email" placeholder="Email" required>
+                                                    <div class="input-signup">
+                                                        <div id="success"></div>
+                                                        <div id="empty"></div>
+                                                        <input type="text" class="form-control" id="new-username" placeholder="User name" required>
+                                                        <div id="username_error"></div>
+                                                        <input type="email" class="form-control" id="new-email" placeholder="Email"  required>
+                                                        <div id="email_error"></div>
                                                         <input type="password" class="form-control" id="new-password" placeholder="Password" required>
                                                         <input type="password" class="form-control" id="new-cpassword" placeholder="Confirm password" required>
+                                                        <div id="password_error"></div>
                                                     </div>
                                                     <div>
                                                       <button type="submit" class="btn btn-primary" id="signup">Create Account</button>
                                                     </div>
+                                        
                                                 </div>
                                             </div>                                                                           
                                         <!-- </div>
