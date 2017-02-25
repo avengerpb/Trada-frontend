@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $('#wait').hide();
     $('#signup').click(function(){
         var user_name = $("#new-username").val();
         var email = $("#new-email").val();
@@ -9,9 +10,12 @@ $(document).ready(function(){
             type: "POST",
             url: "http://localhost/trada-backend/index.php/user/signup",
             data: dataString,
+            beforeSend: function() { $('#wait').show(); $('#signup').hide(); },
             success : function(result){
             // alert("dataString");
                 /*window.location.replace("http://localhost/trada-frontend/index.html");*/
+                $('#wait').hide(); 
+                $('#signup').show();
                 var result = JSON.parse(result);
                 if(result.status == 'ok') {
                     var info = "Success! Please check your email for confirmation!";
@@ -28,6 +32,9 @@ $(document).ready(function(){
                      $('.alert .close').on("click", function (e) {
                          $(this).parent().fadeTo(500, 0).slideUp(500);
                      });
+                     window.setTimeout(function() {
+                         window.location.replace("http://localhost/trada-frontend/index.html");
+                     }, 6000);;
                 }
                 else {
                     if(result.status == 'empty'){
