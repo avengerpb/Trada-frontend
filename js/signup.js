@@ -17,6 +17,7 @@ $(document).ready(function(){
                 $('#wait').hide(); 
                 $('#signup').show();
                 var result = JSON.parse(result);
+                /*alert(result.status + result.user_name + result.email);*/
                 if(result.status == 'ok') {
                     var info = "Success! Please check your email for confirmation!";
                     $("#success").html('<div class="alert alert-success"><button type="button" class="close">×</button>'+info+'</div>');
@@ -47,9 +48,7 @@ $(document).ready(function(){
                                  $(this).remove();
                              });
                         }, 5000);
-                    } else {
-                        $('#empty').hide();
-                    }
+                    } 
                     if(result.user_name == 'inuse'){
                         var info = "User name is inused";
                         $("#username_error").html('<div class="alert alert-danger">'+info+'</div>');
@@ -60,9 +59,7 @@ $(document).ready(function(){
                                  $(this).remove();
                              });
                         }, 5000);
-                    } else{
-                        $("#username_error").hide();
-                    }
+                    } 
                     if(result.email == 'notvalid' || result.email == 'inuse'){
                         var info = "Email is invalid or inused";
                         $("#email_error").html('<div class="alert alert-danger">'+info+'</div>');
@@ -73,8 +70,6 @@ $(document).ready(function(){
                                  $(this).remove();
                              });
                         }, 5000);
-                    } else {
-                        $("#email_error").hide();
                     }
                     if(result.password == 'mismatch'){
                         var info = "Password does not match";
@@ -86,9 +81,7 @@ $(document).ready(function(){
                                  $(this).remove();
                              });
                         }, 5000);
-                    } else {
-                        $("#password_error").hide();
-                    }
+                    } 
                 }
             }
         });
