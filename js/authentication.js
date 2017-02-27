@@ -1,7 +1,23 @@
 $(document).ready(function(){
-    /*localStorage.removeItem('result');*/
-    /*localStorage.clear();*/
-    /*alert("aaaaa");*/
+    $.ajax({
+        type: "GET",
+        url: "http://localhost/trada-backend/index.php/store_items/manage",
+        success : function(item){
+            var item = JSON.parse(item);
+            var text = '';
+            var ul = $('.show-item ul');
+            for (var i=0 ; i < item.length; i++) { 
+                /*text += item[i].item_name;*/
+                ul.find('li:first').clone()
+                        .attr({'id': 'item'+i})
+                        .appendTo(ul);
+                $('#item'+i+' > h2 > a').prepend(item[i].item_name);
+                $('#item'+i+' > p.product-price').append(item[i].price);
+            }
+            ul.find('li:first').hide();
+        }
+
+    });
     var response = JSON.parse(localStorage.getItem('result'));
     /*alert(response.user[0].user_id);*/
     if (response != null) {
@@ -69,7 +85,7 @@ $(document).ready(function(){
     });
 
     $.ajax({
-        type: "POST",
+        type: "GET",
         url: "http://localhost/trada-backend/index.php/Facebook_login/fb_login",
         success : function(url_response){
             var url = JSON.parse(url_response);
@@ -92,10 +108,4 @@ $(document).ready(function(){
     }
 
     
-
 });
-
-
-
-
-
