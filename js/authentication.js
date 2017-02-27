@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $('.search-result').hide();
+    $('.search-item').hide();
     $.ajax({
         type: "GET",
         url: "http://localhost/trada-backend/index.php/store_items/manage",
@@ -11,13 +13,18 @@ $(document).ready(function(){
                 ul.find('li:first').clone()
                         .attr({'id': 'item'+i})
                         .appendTo(ul);
-                $('#item'+i+' > h2 > a').prepend(item[i].item_name);
-                $('#item'+i+' > p.product-price').append(item[i].price);
+                $('#item'+i+' > h2 > a').html(item[i].item_name);
+                $('#item'+i+' > p.product-price').html(item[i].price);
             }
             ul.find('li:first').hide();
         }
 
     });
+
+    $('.btn2').click(function(){
+        window.location.replace('http://localhost/trada-frontend/newshop.html');
+    });
+
     var response = JSON.parse(localStorage.getItem('result'));
     /*alert(response.user[0].user_id);*/
     if (response != null) {
