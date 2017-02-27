@@ -76,9 +76,25 @@
 
     $(document).ready(function(){
 
-	$("#stars-default").rating();
-	$("#stars-green").rating('create',{coloron:'yellow',onClick:function(){ alert('DKM ' + this.attr('data-rating')); }});
-	$("#stars-herats").rating('create',{coloron:'red',limit:10,glyph:'glyphicon-heart'});	
+		$("#stars-default").rating();
+		$("#stars-green").rating('create',{coloron:'yellow',onClick:function(){ 
+		 	var point = this.attr('data-rating');
+		 	var datastring = "ditmemay=" + point;
+		 	alert(datastring);
+		 	$.ajax({
+                type: "POST",
+                url: "http://localhost/trada-backend/index.php/review/post_review",
+                data: datastring,
+                success : function(result){
+                    var result = JSON.parse(result);
+                    if(result.length == 0) {
+                    	alert (result);
+                    }
+                }
+            });
+		}
+	});
+	$("#stars-herats").rating('create',{coloron:'red',limit:10,glyph:'glyphicon-heart'});
 });
  
 }( jQuery ));
