@@ -13,7 +13,6 @@
 .product-list-basic li{
     box-sizing:border-box;
     display: inline-block;
-
     text-align:left;
     font:normal 12px sans-serif;
 
@@ -104,9 +103,11 @@
     font-size: 14px;
     line-height: 1.45;
     white-space: normal;
-
+    text-align: justify;
+    text-justify: inter-word;
     max-width: 260px;
     margin-bottom: 20px;
+    max-height: 200px;
 }
 
 /* Price and order button */

@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	$('.no-result').hide();
+	$('.show-user').hide();
 	var ul = $('.show-item ul');
+	var ul2 = $('.show-user ul');
 	
 	$('input#srch-term').keypress(function(e) {
 	    if (e.which == '13') {
@@ -13,10 +15,12 @@ $(document).ready(function(){
 	$('#srch-btn').click(function(){
 		$('.search-result').show();
 		$('.search-item').show();
+		$('.search-user').show();
 		$('.see-more').hide();
 		$('.category').hide();
 		$('#slides').hide();
 		ul.hide();
+		ul2.hide();
 	    var search_phrase = $('#srch-term').val();
 	    var searchString = "search_phrase=" + search_phrase;
 	    
@@ -33,12 +37,16 @@ $(document).ready(function(){
 	            	$('.search-result').hide();
 	            	$('.search-item').hide();
 	            	$('.show-item').hide();
+
 	            }
 	            else{
 	            	$('.show-item').show();
+	            	$('.show-user').show();
 	            	$('.no-result').hide();
 					var text = '';
 					ul.show();
+					ul2.show();
+					/*ul2.show();*/
 					for (var i=0 ; i < result.item.length; i++) { 
 					
 					   ul.find('li:first').clone()
@@ -52,6 +60,22 @@ $(document).ready(function(){
 					for(var i = result.item.length; i<10000; i++){
 						$('#item'+i).hide();
 					}
+
+					for (var i=0 ; i < result.user.length; i++) { 
+					
+					   ul2.find('li:first').clone()
+					           .attr({'id': 'user'+i})
+					           .appendTo(ul2);
+					   $('#user'+i).show();
+					   $('#user'+i+'> a.user-avatar > img').attr('src', result.user[i].user_image_url)
+					   $('#user'+i+' > p.search-name').html(result.user[i].user_name);
+					   $('#user'+i+' > p.search-email > span').html(result.user[i].email);
+					}
+					ul2.find('li:first').hide();
+					for(var i = result.user.length; i<10000; i++){
+						$('#user'+i).hide();
+					}
+
 	           	} 
 	        }
 	    });
