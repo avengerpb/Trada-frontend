@@ -47,6 +47,8 @@ $(document).ready(function(){
 					ul.show();
 					ul2.show();
 					/*ul2.show();*/
+					var num_result = result.item.length + result.user.length;
+					$('h2.search-result').html(num_result + ' result(s) found');
 					for (var i=0 ; i < result.item.length; i++) { 
 					
 					   ul.find('li:first').clone()
@@ -67,9 +69,10 @@ $(document).ready(function(){
 					           .attr({'id': 'user'+i})
 					           .appendTo(ul2);
 					   $('#user'+i).show();
-					   $('#user'+i+'> a.user-avatar > img').attr('src', result.user[i].user_image_url)
+					   $('#user'+i+'> a.user-avatar > img').attr('src', result.user[i].user_image_url);
 					   $('#user'+i+' > p.search-name').html(result.user[i].user_name);
 					   $('#user'+i+' > p.search-email > span').html(result.user[i].email);
+					   /*$('#user'+i+' > p.search-location > span').html(result.user[i].location);*/
 					}
 					ul2.find('li:first').hide();
 					for(var i = result.user.length; i<10000; i++){

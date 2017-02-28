@@ -7,8 +7,13 @@ body{
     padding-top:70px;
 }
 
-
-.user-profiles-list-basic{
+.shop-list-toggle,
+#no-shop {
+    display: none;
+    padding: 100px;
+}
+.user-profiles-list-basic,
+.shop-list-toggle{
     line-height: 1;
     list-style:none;
     text-align: center;
@@ -16,7 +21,8 @@ body{
     padding:0;
 }
 
-.user-profiles-list-basic li{
+.user-profiles-list-basic li,
+.shop-list-toggle li{
     display: inline-block;
     width: 30%;
     box-sizing:border-box;
@@ -32,19 +38,22 @@ body{
     box-shadow: 0 2px 3px #dbe3e7;
 }
 
-.user-profiles-list-basic .user-avatar{
+.user-profiles-list-basic .user-avatar,
+.shop-list-toggle .shop-avatar{
     float: left;
     width:100px;
     text-align: left;
-    margin-top:3%;
+    margin-top:2%;
 }
 
-.user-profiles-list-basic .user-avatar img{
+.user-profiles-list-basic .user-avatar img,
+.shop-list-toggle .shop-avatar img{
     border-radius: 50%;
     border:0;
 }
 
-.user-profiles-list-basic p{
+.user-profiles-list-basic p,
+.shop-list-toggle p{
     white-space: nowrap;
     overflow: hidden;
     text-overflow:ellipsis;
@@ -53,14 +62,16 @@ body{
     max-width:340px;
 }
 
-.user-profiles-list-basic p a{
+.user-profiles-list-basic p a,
+.shop-list-toggle p a{
     color:#5d6569;
     text-decoration: none;
     font-weight:bold;
     font-size:18px;
 }
 
-.user-profiles-list-basic p span{
+.user-profiles-list-basic p span,
+.shop-list-toggle p span{
     display: block;
     font-size: 14px;
     color:#808d93;
@@ -83,7 +94,8 @@ body{
 
 }
 
-.user-profiles-list-basic p.search-name{
+.user-profiles-list-basic p.search-name,
+.shop-list-toggle .shop-name{
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -523,4 +535,8 @@ a.btn-social{
     margin-top:10%; 
     margin-bottom:10%;
 }
+
+/*hr.style2 {
+    border-top: 3px double #8c8b8b;
+}*/
 

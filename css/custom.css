@@ -15,7 +15,7 @@
     display: inline-block;
     text-align:left;
     font:normal 12px sans-serif;
-
+    
     background-color:#ffffff;
     border:1px solid #dbe3e7;
     border-radius: 3px;
@@ -55,6 +55,11 @@
     color: #2b2b2b;
 }
 
+.product-list-basic p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
 .product-list-basic .product-compare{
     float:right;
 
