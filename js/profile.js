@@ -1,3 +1,18 @@
+function showShop(shop_id) { 
+    string = 'shop_id='+shop_id;
+    $.ajax({
+        type: "POST",
+        data: string,
+        url: "http://localhost/trada-backend/index.php/shop/fetch_data_from_db",
+        success : function(result){
+            var result = JSON.parse(result);
+            /*alert(result.shop_name);*/
+            sessionStorage.setItem('shop', JSON.stringify(result));
+            
+            window.location.href = 'http://localhost/trada-frontend/shop';
+        }
+    });
+};
 $(document).ready(function(){
 // alert("hello");
     var response = JSON.parse(localStorage.getItem('result'));
@@ -39,7 +54,9 @@ $(document).ready(function(){
                 $('a.shop-list').click(function(){
                     /*$(".shop-list-toggle").slideToggle("slow");*/
                     /*ul_shop.show();*/
+
                     if(response.length !== 0){
+                        
                         for(var i=0;i<response.length;i++){
                             ul_shop.find('li:first').clone()
                                     .attr({'id': 'shop'+i})
@@ -47,6 +64,23 @@ $(document).ready(function(){
                             $('#shop'+i+' > p.shop-name').html(response[i].shop_name);
                             $('#shop'+i+' > p.shop-addr > span').html(response[i].address);
                             $('#shop'+i+'> a.shop-avatar > img').attr('src', response[i].shop_image_url);
+                            $('#shop'+i+'> a.shop-avatar').attr('onclick', 'showShop('+response[i].shop_id+')');
+            
+                            // $('#shop'+i+'> a.shop-avatar > img').click(function(e){
+                            //     e.preventDefault();
+                            //     // var shop_id = response[i].shop_id;
+                            //     // var string = 'shop_id='+shop_id;
+                            //    alert(response[i-1].shop_id);
+                            //     // $.ajax({
+                            //     //     type: "POST",
+                            //     //     data: string,
+                            //     //     url: "http://localhost/trada-backend/index.php/shop/fetch_data_from_db",
+                            //     //     success : function(result){
+                            //     //         var result = JSON.parse(result);
+                            //     //         alert(result.shop_name);
+                            //     //     }
+                            //     // });
+                            // });
                             /*$('#shop'+i).slideToggle('slow');*/
                         }
                         ul_shop.find('li:first').hide();
