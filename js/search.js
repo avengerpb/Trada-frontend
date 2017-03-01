@@ -1,8 +1,10 @@
 $(document).ready(function(){
 	$('.no-result').hide();
 	$('.show-user').hide();
+	$('.show-shop').hide();
 	var ul = $('.show-item ul');
 	var ul2 = $('.show-user ul');
+	var ul3 = $('.show-shop ul');
 	
 	$('input#srch-term').keypress(function(e) {
 	    if (e.which == '13') {
@@ -16,11 +18,13 @@ $(document).ready(function(){
 		$('.search-result').show();
 		$('.search-item').show();
 		$('.search-user').show();
+		$('.search-shop').show();
 		$('.see-more').hide();
 		$('.category').hide();
 		$('#slides').hide();
 		ul.hide();
 		ul2.hide();
+		ul3.hide();
 	    var search_phrase = $('#srch-term').val();
 	    var searchString = "search_phrase=" + search_phrase;
 	    
@@ -35,19 +39,23 @@ $(document).ready(function(){
 	            	$('.no-result').show();
 	            	$('#slides').hide();
 	            	$('.search-result').hide();
+	            	$('.search-user').hide();
 	            	$('.search-item').hide();
+	            	$('.search-shop').hide();
 	            	$('.show-item').hide();
 
 	            }
 	            else{
 	            	$('.show-item').show();
 	            	$('.show-user').show();
+	            	$('.show-shop').show();
 	            	$('.no-result').hide();
 					var text = '';
 					ul.show();
 					ul2.show();
+					ul3.show();
 					/*ul2.show();*/
-					var num_result = result.item.length + result.user.length;
+					var num_result = result.item.length + result.user.length + result.shop.length;
 					$('h2.search-result').html(num_result + ' result(s) found');
 					for (var i=0 ; i < result.item.length; i++) { 
 					
@@ -77,6 +85,22 @@ $(document).ready(function(){
 					ul2.find('li:first').hide();
 					for(var i = result.user.length; i<10000; i++){
 						$('#user'+i).hide();
+					}
+
+					for (var i=0 ; i < result.shop.length; i++) { 
+					
+					   ul3.find('li:first').clone()
+					           .attr({'id': 'shop'+i})
+					           .appendTo(ul3);
+					   $('#shop'+i).show();
+					   $('#shop'+i+'> a.shop-avatar-index > img').attr('src', result.shop[i].shop_image_url);
+					   $('#shop'+i+' > p.shop-name-index').html(result.shop[i].shop_name);
+					   $('#shop'+i+' > p.shop-addr-index > span').html(result.shop[i].address);
+					   /*$('#user'+i+' > p.search-location > span').html(result.user[i].location);*/
+					}
+					ul3.find('li:first').hide();
+					for(var i = result.shop.length; i<10000; i++){
+						$('#shop'+i).hide();
 					}
 
 	           	} 

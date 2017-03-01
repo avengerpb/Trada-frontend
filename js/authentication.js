@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.search-result').hide();
     $('.search-item').hide();
     $('.search-user').hide();
+    $('.search-shop').hide();
     $.ajax({
         type: "GET",
         url: "http://localhost/trada-backend/index.php/store_items/manage",
@@ -106,11 +107,8 @@ $(document).ready(function(){
     var fb_data= document.cookie;
     if(fb_data != null){
         var cookieParts = fb_data.match(/^([^=]+)=(.*)$/);
-        /*var cookie_name = cookieParts[1];*/
         var decode = decodeURIComponent(cookieParts[2]);
         var fb = JSON.parse(decode);
-        /*var new_user_name = fb.user_name.replace('+', ' ');*/
-        /*alert(new_user_name);*/
         localStorage.setItem('result', JSON.stringify(fb));
         window.location.reload();
     }  
