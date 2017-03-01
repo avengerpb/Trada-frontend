@@ -114,7 +114,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "POST",
-            data: fb_link,
+            data: dataString,
             url: "http://localhost/trada-backend/index.php/facebook_login/add_page_shop",
             success : function(response){
                 var response = JSON.parse(response);
