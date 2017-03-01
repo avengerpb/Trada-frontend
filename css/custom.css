@@ -38,6 +38,17 @@
     padding: 20px 0;
     box-sizing: border-box;
 }
+.product-list-basic .product-photo1{
+    display: block;
+    text-align: center;
+    
+
+    width: 180px;
+    margin-bottom: 25px;
+    margin: auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
 
 /* The product name */
 
