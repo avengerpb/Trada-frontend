@@ -3,6 +3,119 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+body{
+    padding-top:70px;
+}
+
+.shop-list-toggle,
+#no-shop {
+    display: none;
+    padding: 100px;
+}
+.user-profiles-list-basic,
+.shop-list-toggle{
+    line-height: 1;
+    list-style:none;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+
+.user-profiles-list-basic li,
+.shop-list-toggle li{
+    display: inline-block;
+    width: 30%;
+    box-sizing:border-box;
+    position: relative;
+
+    text-align:left;
+    font:normal 16px sans-serif;
+    padding: 15px 30px 15px 20px;
+    margin: 12px;
+
+    background-color:#f4f8fa;
+    border:1px solid #dbe3e7;
+    box-shadow: 0 2px 3px #dbe3e7;
+}
+
+.user-profiles-list-basic .user-avatar,
+.shop-list-toggle .shop-avatar{
+    float: left;
+    width:100px;
+    text-align: left;
+    margin-top:2%;
+}
+
+.user-profiles-list-basic .user-avatar img,
+.shop-list-toggle .shop-avatar img{
+    border-radius: 50%;
+    border:0;
+}
+
+.user-profiles-list-basic p,
+.shop-list-toggle p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    text-align: left;
+    margin-top: 20px;
+    max-width:340px;
+}
+
+.user-profiles-list-basic p a,
+.shop-list-toggle p a{
+    color:#5d6569;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.user-profiles-list-basic p span,
+.shop-list-toggle p span{
+    display: block;
+    font-size: 14px;
+    color:#808d93;
+    padding-top:4px;
+}
+
+.user-profiles-list-basic .delete{
+    background-color:#de4a4a;
+    border-radius: 50%;
+    color:#fff;
+    font-size:13px;
+    line-height: 22px;
+    width:22px;
+    height: 22px;
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.user-profiles-list-basic p.search-name,
+.shop-list-toggle .shop-name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Making the list responsive */
+
+@media (max-width: 400px) {
+
+    .user-profiles-list-basic li{
+        margin: 10px 0;
+    }
+
+    .user-profiles-list-basic .delete{
+        top: 10px;
+        right: 10px;
+    }
+
+}
+
+
 input[type="text"],
 textarea, 
 textarea.form-control {
@@ -423,4 +536,7 @@ a.btn-social{
     margin-bottom:10%;
 }
 
+/*hr.style2 {
+    border-top: 3px double #8c8b8b;
+}*/
 

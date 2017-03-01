@@ -15,13 +15,7 @@
     <link href="css/trada-homepage.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <!-- <link href="css/form.css" rel="stylesheet"> -->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/search.js"></script>
@@ -29,7 +23,7 @@
     <script type="text/javascript" src="js/authentication.js"></script>
 
 </head>
-<body style="padding-top:70px;">
+<body>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
         <div class="container container-fluid">
@@ -65,13 +59,13 @@
                               <li id="profile"><a href="profile.html">Profile</a></li>
                               <li id="logout"><a href="#">Logout</a></li>
                             </ul>
-                          </div>
+                        </div>
                         <div class="col-md-3">
                             <div class="dropdown" id="login">
                                 <button class="btn2 dropbtn" style="margin-top:20%">Login</button>
                                 <div class="dropdown-content" style="right:0;">
                                     <div class="row">
-                                        <div class="col-md-12 modal-body well" style="margin-bottom: 20px;"">
+                                        <div class="col-md-12 modal-body" style="margin-bottom: 20px;"">
                                             <ul class="nav nav-tabs">
                                                 <li class="active"><a href="#tab-login" data-toggle="tab">Login</a></li>
                                                 <li><a href="#create" data-toggle="tab">Create Account</a></li>
@@ -120,42 +114,37 @@
                                                       <button type="submit" class="btn btn-primary" id="signup">Create Account</button>
                                                       <center><div id="wait"><img src="img/loader.gif" style="width:64px;"></div></center>
                                                     </div>
-                                        
                                                 </div>
-                                            </div>                                                                           
-                                        <!-- </div>
-                                        <div class="bottom text-center" style="margin-top: 20px;">
-                                            New here ? <a id="sign-up" href="signup.html"><b>Join Us</b></a>
-                                        </div> -->
+                                            </div>                                                  
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
+                    </div> 
+                </div>
+
+                <div class="container trending">
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                      <ul class="nav navbar-nav trending-menu">
+                        <li><a class="week" href="#">FOOD </a></li>
+                        <li><a class="week" href="#">CLOTHES </a></li>
+                        <li><a class="week" href="#">COMPUTER </a></li>
+                        <li><a class="week" href="#">PHONE </a></li>
+                        <li><a class="week" href="#">TELEVISION </a></li>
+                        <li><a class="week" href="#">SUBSCRIBE </a></li>
+                      </ul>
                     </div>
-                </div> 
-            </div>
-            <!-- /.navbar-collapse -->
-            <div class="container trending">
-                <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                  <ul class="nav navbar-nav trending-menu">
-                    <li><a class="week" href="#">FOOD </a></li>
-                    <li><a class="week" href="#">CLOTHES </a></li>
-                    <li><a class="week" href="#">COMPUTER </a></li>
-                    <li><a class="week" href="#">PHONE </a></li>
-                    <li><a class="week" href="#">TELEVISION </a></li>
-                    <li><a class="week" href="#">SUBSCRIBE </a></li>
-                  </ul>
                 </div>
             </div>
         </div>
-        <!-- /.container -->
     </nav>
     <!-- Page Content -->
     <div class="container container-fluid" id="main-content" style="margin-top: 100px;">
 
         <div class="row">
-            <div class="row carousel-holder">
+            <h2 class="no-result">No results found !!!</h2>
+            <div class="row carousel-holder" id="slides">
 
                 <div class="col-md-12">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -185,8 +174,14 @@
                 </div>
 
             </div>
-           
-            <div class="row">
+            <h2 class="search-result" style="margin-left:3%"></h2>
+            <ul class="search-item" style="list-style-type:none">
+              <li><h3><strong>Items--------------</strong></h3></li>
+              
+            </ul> 
+            <!-- <hr class="style2"> -->
+            <div class="row show-item">
+
                 <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:0px; padding-top:7%; padding-left: 2.2%;">
                     <h2>PHONES</h2>
                 </div> 
@@ -198,91 +193,58 @@
 
                 <ul class="product-list-basic">
 
-                <li style="margin:2%;">
+                    <li style="margin:2%;">
 
-                    <a href="#" class="product-photo">
-                        <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
-                    </a>
+                        <a href="#" class="product-photo">
+                            <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
+                        </a>
 
-                    <h2><a href="#">Galaxy S7</a></h2>
-                    <a href="#" class="product-compare">compare</a>
+                        <h2><a href="#" class="item_name"></a></h2>
+                        <a href="#" class="product-compare">compare</a>
 
-                    <div class="product-rating">
-                        <div>
+                        <div class="product-rating">
+                            <div>
                                 <span class="product-stars" style="width: 60px" >
                                     <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                                 </span>
+                            </div>
+
+                            <span><a href="#">82 reviews</a></span>
                         </div>
 
-                        <span><a href="#">82 reviews</a></span>
-                    </div>
+                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
 
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+                        <button class="product">Buy Now!</button>
+                        <p class="product-price">VND </p>
 
-                    <button class="product">Buy Now!</button>
-                    <p class="product-price">$599.00</p>
-
-                </li>
-
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one/hero/color-picker/black.png" height="130" alt="Galaxy Alpha" />
-                    </a>
-
-                    <h2><a href="#">HTC One</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">90 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <button>Buy Now!</button>
-                    <p class="product-price">$599.00</p>
-
-                </li>
-
-                <li style="margin:2%;">
-
-                    <a href="#" class="product-photo">
-                        <img src="https://staticshop.o2.co.uk/product/images/iphone-7-plus-matt-black_sku-header.png?cb=2e5bd1802aec5fc0dcc12fa2a249e0b4" height="130" alt="Nokia Lumia" />
-                    </a>
-
-                    <h2><a href="#">Iphone 7</a></h2>
-                    <a href="#" class="product-compare">compare</a>
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" style="width: 60px" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">123 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <span class="product-out-of-stock">Out of stock</span>
-                    <p class="product-price">$299.00</p>
-
-                </li>
-
-            </ul>
+                    </li>
+                </ul>
             </div>
 
-          </div>  
+            <ul class="search-user" style="list-style-type:none">
+              <li><h3><strong>Users--------------</strong></h3></li>
+            </ul>
+            <!-- <hr class="style2"> -->
+            <div class="row show-user">
+                <ul class="user-profiles-list-basic">
 
+                    <li>
+                        <a href="#" class="user-avatar">
+                            <img src="" width="80" height="80" alt="" />
+                        </a>
+
+                        <p class="search-name">
+                            <a href=""></a> 
+                        </p>
+                        <p class="search-email" style="margin:0;">
+                            <span></span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div> 
     </div>
-    <!-- /.container -->
+    
 
     <div class="container">
 
