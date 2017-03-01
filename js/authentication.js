@@ -23,8 +23,8 @@ $(document).ready(function(){
 
     });
 
-    $('.btn2').click(function(){
-        window.location.replace('http://localhost/trada-frontend/newshop.html');
+    $('.start-market').click(function(){
+        window.location.href ='http://localhost/trada-frontend/newshop.html';
     });
 
     var response = JSON.parse(localStorage.getItem('result'));
