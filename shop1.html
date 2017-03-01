@@ -1,138 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Shop</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      position: relative;
-  }
-  .affix {
-      top: 20px;
-  }
-  div.col-sm-9 div {
-      height: 250px;
-      font-size: 28px;
-  }
-  /*#section1 {color: #fff; background-color: #1E88E5;}*/
-  /*#section2 {color: #fff; background-color: #673ab7;}*/
-  #section3 {color: #fff; background-color: #ff9800;}
-  #section41 {color: #fff; background-color: #00bcd4;}
-  #section42 {color: #fff; background-color: #009688;}
   
-  @media screen and (max-width: 810px) {
-    #section1, #section2, #section3, #section41, #section42  {
-        margin-left: 150px;
-    }
-  }
-  </style>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
 
 
 <br>
 
-<div class="container1">
-  <div class="row">
-    <nav class="col-md-2" id="myScrollspy">
-      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205" style="padding-top: 50px; padding-left: 30px;">
-        <li><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-      </ul>
-    </nav>
-    
+    <!-- Page Content -->
+    <div class="container" style="padding: 0px;">
 
-    <div class="col-md-9">
-      <div class="row">
-          <div class="col-md-12" style="border: 1px solid blue; margin: 20px;">
-            <div style="height: 500px;">
-            <!-- shop info and ava -->
-              <div class="row">
-              <!-- avatar div -->
-                <div class="col-md-2" style="border: 1px solid green">
-                  <div style="height: 200px; text-align: center; vertical-align: middle; line-height: 200px;">
-                  <p> ava to vai lon </p>
-                  </div>
-                </div>
-                <!-- end ava -->
-                <!-- info -->
-                <div class="col-md-10" style="border: 1px solid red">
-                  <div style="height: 200px; text-align: left">
-                  <h3> <strong> Shop Info </strong> </h3>
-                  <p> info 1 ne</p>
-                  <p> info 2 ne</p>
-                  <p> info 3 ne</p>
-                  </div>
-                </div>
-                <!-- end info -->
-              </div>
-              <!-- end shop info and ava -->
+        <div class="row">
 
-              <!-- start album -->
-              <div id="section1">
-              <h3 style="text-align:left;"> <strong> Category 1 </strong> </h3>
-              <div class="row">
-                <div style="margin: 10px; border-radius: 10px; border: 2px solid red; height: 100px">
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
+            <div class="col-md-3">
+                <p class="lead">Shop Name</p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Category 1</a>
+                    <a href="#" class="list-group-item">Category 2</a>
+                    <a href="#" class="list-group-item">Category 3</a>
                 </div>
-              </div>
-              
-              </div>
+            </div>
 
-              <div id="section2">
-              <h3 style="text-align:left;"> <strong> Category 2 </strong> </h3>
-              <div class="row">
-                <div style="margin: 10px; border-radius: 10px; border: 2px solid red; height: 100px">
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
-                  <div style="float: left; border-radius: 100px; border: 1px solid blue; height: 90px; width: 90px;text-align: center; vertical-align: middle; line-height: 100px; margin: 5px;">
-                    <p> ava + info </p>
-                  </div>
+            <div class="col-md-9">
+
+                <div class="row carousel-holder">
+
+                    <div class="col-md-12">
+
+                    <h4> <strong> Shopowner: Duc <strong></h4>
+                    <a href="#"> See us on Facebook </a>
+                        
+                    </div>
+
                 </div>
-              </div>
-              </div>
-              <!-- end album -->
+
+                <div class="row">
+
+                    <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:0px; padding-top:7%; padding-left: 2.2%;">
+                        <h2>Category 1</h2>
+                    </div> 
+                    <div class="clearfix"></div>
+
+                <ul class="product-list-basic">
+
+                <li style="margin:2%; width:27%;">
+
+                    <a href="#" class="product-photo1" >
+                        <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
+                    </a>
+
+                    <h2><a href="#">Galaxy S7</a></h2>
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" style="width: 60px" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">82 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button class="product">Rate it now!</button>
+                    <p class="product-price">$599.00</p>
+
+                </li>
+
+                <li style="margin:2%;width:27%;">
+
+                    <a href="#" class="product-photo1">
+                        <img src="http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one/hero/color-picker/black.png" height="130" alt="Galaxy Alpha" />
+                    </a>
+
+                    <h2><a href="#">HTC One</a></h2>
+                    
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" >
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#"></a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button>Rate it now!</button>
+                    <p class="product-price">$599.00</p>
+
+                </li>
+
+                <li style="margin:2%; width:27%;">
+
+                    <a href="#" class="product-photo1">
+                        <img src="https://staticshop.o2.co.uk/product/images/iphone-7-plus-matt-black_sku-header.png?cb=2e5bd1802aec5fc0dcc12fa2a249e0b4" height="130" alt="Nokia Lumia" />
+                    </a>
+
+                    <h2><a href="#">Iphone 7</a></h2>
+                  
+
+                    <div class="product-rating">
+                        <div>
+                                <span class="product-stars" style="width: 60px" >
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                        </div>
+
+                        <span><a href="#">123 reviews</a></span>
+                    </div>
+
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+
+                    <button>Rate it now!</button>
+                    <p class="product-price">$299.00</p>
+
+                </li>
+
+            </ul>
+            
+
+                </div>
+
             </div>
-            </div>
-            </div>
+
+        </div>
+
     </div>
-  </div>
-</div>
+    <!-- /.container -->
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>

@@ -13,155 +13,238 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
+    <link href="css/trada-homepage.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/trada-homepage.css">
+    
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="js/shop.js"></script>
     <script type="text/javascript" src="js/search.js"></script>
-
+    <script type="text/javascript" src="js/signup.js"></script>
+    <script type="text/javascript" src="js/authentication.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
 </head>
-<body>
 
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="150" style="padding-top:70px;">
 
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
+    <div class="container container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" style="margin-top:2%">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Trada</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- <form name="myform" class="navbar-form navbar-left" role="search" style="margin-left:20px; " id="srch"> -->
+            <div class="input-group add-on navbar-left" style="width:55%; margin-top:2%; margin-left:5%;">
+                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text" required="">
+                <div class="input-group-btn" style="width:10%;">
+                  <button class="btn1 btn-default" id="srch-btn"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+            </div>
+            <!-- </form> -->
+            <div class="navbar-form navbar-right">
+                <div class="row">
+                    <div class="col-md-9 hidden start-market" style="margin-top:5%">
+                        <button class="btn2 btn-default">Start your market</button>
+                    </div>
+                    <div class="dropdown col-md-3 hidden login-new" style="margin-top:3%">
+                        <!-- <div class="btn dropdown-toggle user-name hidden" data-toggle="dropdown" > <span class="caret"></div> -->
+                        <div class="btn dropdown-toggle user-img " data-toggle="dropdown"><img src=""></div>
+                        <ul class="dropdown-menu">
+                          <li id="profile"><a href="profile.html">Profile</a></li>
+                          <li id="logout"><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dropdown" id="login">
+                            <button class="btn2 dropbtn" style="margin-top:20%">Login</button>
+                            <div class="dropdown-content" style="right:0;">
+                                <div class="row">
+                                    <div class="col-md-12 modal-body" style="margin-bottom: 20px;"">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#tab-login" data-toggle="tab">Login</a></li>
+                                            <li><a href="#create" data-toggle="tab">Create Account</a></li>
+                                        </ul>
+                                        <div id="myTabContent" class="tab-content">
+                                            <div class="tab-pane active in" id="tab-login">
+                                                <p style="margin-top:10%">Login via</p>
+
+                                                <a class="btn btn-block btn-social btn-facebook" id="fb-login" href="">
+
+                                                    <span class="fa fa-facebook"></span> |  Facebook
+                                                </a>
+                                                <br>
+                                                <p>Or </p>                                        
+                                                <div class="form-group">
+                                                   <label class="sr-only" for="email">Email or Username</label>
+                                                   <input type="email" class="form-control" id="email" placeholder="Email or Username" required>
+                                                </div>
+                                                <div class="form-group">
+                                                   <label class="sr-only" for="password">Password</label>
+                                                   <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                                    <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                                </div>
+                                                <div class="form-group">
+                                                   <button type="submit" class="btn btn-primary btn-block" id="logsubmit" >Log in</button>
+                                                </div>
+                                                <div class="checkbox">
+                                                   <label>
+                                                        <input type="checkbox"> keep me logged-in
+                                                   </label>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="create">
+                                                <div class="input-signup">
+                                                    <div id="success"></div>
+                                                    <div id="empty"></div>
+                                                    <input type="text" class="form-control" id="new-username" placeholder="User name" required>
+                                                    <div id="username_error"></div>
+                                                    <input type="email" class="form-control" id="new-email" placeholder="Email"  required>
+                                                    <div id="email_error"></div>
+                                                    <input type="password" class="form-control" id="new-password" placeholder="Password" required>
+                                                    <input type="password" class="form-control" id="new-cpassword" placeholder="Confirm password" required>
+                                                    <div id="password_error"></div>
+                                                </div>
+                                                <div>
+                                                  <button type="submit" class="btn btn-primary" id="signup">Create Account</button>
+                                                  <center><div id="wait"><img src="img/loader.gif" style="width:64px;"></div></center>
+                                                </div>
+                                            </div>
+                                        </div>                                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="container trending">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav trending-menu">
+                    <li><a class="week" href="#">FOOD </a></li>
+                    <li><a class="week" href="#">CLOTHES </a></li>
+                    <li><a class="week" href="#">COMPUTER </a></li>
+                    <li><a class="week" href="#">PHONE </a></li>
+                    <li><a class="week" href="#">TELEVISION </a></li>
+                    <li><a class="week" href="#">SUBSCRIBE </a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 <br>
 
-    <!-- Page Content -->
-    <div class="container" style="padding: 0px;">
+<div class="container" style="margin: 100px 0 0 0; position: relative;">
+  <div class="clearfix">
+  </div>
+  <div class="row">
+    <nav style="position:fixed">
+      <div class="row" style="margin:0 auto;">
+      <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRG4zILx_E9I6kjBx6dn57g1OJ2O_lS6RQFkgMHELM-dc_JRI25RA"/>
+      </div>
+      <div style="text-align: center;">
+      <h3> Ten Shop </h3>
+      <h3> <a href="#"> See us on Facebook </a> </h3>
+      </div>
+    </nav>
+    <div class="col-sm-11 col-sm-offset-3" style="position:relative;">
+      
 
-        <div class="row">
+      <div class=" ">
+          <img class="slide-image" src="http://placehold.it/800x300" alt="">
+      </div>
 
-            <div class="col-md-3">
-                <p class="lead"></p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
-                </div>
-            </div>
+      <div class="clearfix"></div>
 
-            <div class="col-md-9">
+      <ul class="product-list-basic">
 
-                <div class="row carousel-holder">
+          <li style="margin:2%; width: 29%">
 
-                    <div class="col-md-12">
+              <a href="#" class="product-photo1">
+                  <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
+              </a>
 
-                    <h4> <strong> Shopowner: Duc <strong></h4>
-                    <a href="#"> See us on Facebook </a>
-                        
-                    </div>
+              <h2><a href="#" class="item_name"></a></h2>
 
-                </div>
+              <div class="product-rating">
+                  <div>
+                      <span class="product-stars" style="width: 60px" >
+                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                      </span>
+                  </div>
 
-                <div class="row">
+                  <span><a href="#">82 reviews</a></span>
+              </div>
 
-                    <div class="category col-sm-4 col-lg-4 col-md-4" style="margin-bottom:0px; padding-top:7%; padding-left: 2.2%;">
-                        <h2>Category 1</h2>
-                    </div> 
-                    <div class="clearfix"></div>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
 
-                <ul class="product-list-basic">
+              <button class="product">Rate now!</button>
+              <p class="product-price">VND </p>
 
-                <li style="margin:2%; width:27%;">
+          </li>
+          <li style="margin:2%; width: 29%">
 
-                    <a href="#" class="product-photo1" >
-                        <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
-                    </a>
+              <a href="#" class="product-photo1">
+                  <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
+              </a>
 
-                    <h2><a href="#">Galaxy S7</a></h2>
+              <h2><a href="#" class="item_name"></a></h2>
 
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" style="width: 60px" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
+              <div class="product-rating">
+                  <div>
+                      <span class="product-stars" style="width: 60px" >
+                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                      </span>
+                  </div>
 
-                        <span><a href="#">82 reviews</a></span>
-                    </div>
+                  <span><a href="#">82 reviews</a></span>
+              </div>
 
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
 
-                    <button class="product">Rate it now!</button>
-                    <p class="product-price">$599.00</p>
+              <button class="product">Rate now!</button>
+              <p class="product-price">VND </p>
 
-                </li>
+          </li>
+          <li style="margin:2%; width: 29%">
 
-                <li style="margin:2%;width:27%;">
+              <a href="#" class="product-photo1">
+                  <img src="http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-edge-1.jpg" height="130" alt="iPhone 6" />
+              </a>
 
-                    <a href="#" class="product-photo1">
-                        <img src="http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one/hero/color-picker/black.png" height="130" alt="Galaxy Alpha" />
-                    </a>
+              <h2><a href="#" class="item_name"></a></h2>
 
-                    <h2><a href="#">HTC One</a></h2>
-                    
+              <div class="product-rating">
+                  <div>
+                      <span class="product-stars" style="width: 60px" >
+                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                      </span>
+                  </div>
 
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" >
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </span>
-                        </div>
+                  <span><a href="#">82 reviews</a></span>
+              </div>
 
-                        <span><a href="#"></a></span>
-                    </div>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
 
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
+              <button class="product">Rate now!</button>
+              <p class="product-price">VND </p>
 
-                    <button>Rate it now!</button>
-                    <p class="product-price">$599.00</p>
-
-                </li>
-
-                <li style="margin:2%; width:27%;">
-
-                    <a href="#" class="product-photo1">
-                        <img src="https://staticshop.o2.co.uk/product/images/iphone-7-plus-matt-black_sku-header.png?cb=2e5bd1802aec5fc0dcc12fa2a249e0b4" height="130" alt="Nokia Lumia" />
-                    </a>
-
-                    <h2><a href="#">Iphone 7</a></h2>
-                  
-
-                    <div class="product-rating">
-                        <div>
-                                <span class="product-stars" style="width: 60px" >
-                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </span>
-                        </div>
-
-                        <span><a href="#">123 reviews</a></span>
-                    </div>
-
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna.</p>
-
-                    <button>Rate it now!</button>
-                    <p class="product-price">$299.00</p>
-
-                </li>
-
-            </ul>
-            
-
-                </div>
-
-            </div>
-
-        </div>
-
+          </li>
+      </ul>
     </div>
-    <!-- /.container -->
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+  </div>
+</div>
 
 </body>
 
