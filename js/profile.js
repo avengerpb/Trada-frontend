@@ -1,5 +1,5 @@
 function showShop(shop_id) { 
-    string = 'shop_id='+shop_id;
+    var string = 'shop_id='+shop_id;
     $.ajax({
         type: "POST",
         data: string,
@@ -12,7 +12,7 @@ function showShop(shop_id) {
             // window.location.href = 'http://localhost/trada-frontend/shop.html';
         }
     });
-
+    
     $.ajax({
         type: "POST",
         data: string,
@@ -77,6 +77,7 @@ $(document).ready(function(){
                             $('#shop'+i+' > p.shop-addr > span').html(response[i].address);
                             $('#shop'+i+'> a.shop-avatar > img').attr('src', response[i].shop_image_url);
                             $('#shop'+i+'> a.shop-avatar').attr('onclick', 'showShop('+response[i].shop_id+')');
+                            // alert(response[i].shop_id);
                         }
                         ul_shop.find('li:first').hide();
                         $(".shop-list-toggle").slideToggle("slow");
@@ -96,7 +97,7 @@ $(document).ready(function(){
         var facebook_link = $('#facebook-link').val();
         var fb_link = 'fb_link='+facebook_link; 
         dataString = 'shop_name='+market_name+'&address='+market_addr+'&fb_link='+facebook_link;
-        alert(dataString);
+        // alert(dataString);
         $.ajax({
             type: "POST",
             data: dataString,
@@ -113,7 +114,7 @@ $(document).ready(function(){
             url: "http://localhost/trada-backend/index.php/facebook_login/add_page_shop",
             success : function(response){
                 var response = JSON.parse(response);
-                /*alert(response.picture);*/   
+                // alert(response.picture);   
             }
         });
 

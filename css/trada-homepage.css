@@ -548,3 +548,42 @@ a.btn-social{
     border-top: 3px double #8c8b8b;
 }*/
 
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}
+.shopname{
+    position:fixed;
+}
+.shopname img {
+    width:200px;
+    height:200px;
+    margin:auto;
+    display:block;
+}
+.shopname p{
+    text-align: center;
+}
+.lead{
+    margin-top:5%;
+}   
+
