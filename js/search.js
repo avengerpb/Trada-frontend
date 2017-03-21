@@ -27,7 +27,6 @@ $(document).ready(function(){
 		ul3.hide();
 	    var search_phrase = $('#srch-term').val();
 	    var searchString = "search_phrase=" + search_phrase;
-	    
 	    /*alert(search);*/
 	    $.ajax({
 	        type: "POST",
